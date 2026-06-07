@@ -1,0 +1,428 @@
+Dataset root: ../dataset
+Candidates: 37
+Threads: [1, 2, 4, 8]
+Max n: 5000
+Timeout: 120s
+
+[SKIP] ../dataset/UCI/EEG Eye State.csv: n=14980 > max_n=5000
+
+[DATASET] ../dataset/UCI/banknote.csv | n=1372, dim=4, k=2, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0736s
+  Running boruvka seq threads=1 ... ok, wall=0.0325s
+  Running kruskal par threads=1 ... ok, wall=0.0693s
+  Running boruvka par threads=1 ... ok, wall=0.0238s
+  Running kruskal par threads=2 ... ok, wall=0.0686s
+  Running boruvka par threads=2 ... ok, wall=0.0208s
+  Running kruskal par threads=4 ... ok, wall=0.0653s
+  Running boruvka par threads=4 ... ok, wall=0.0146s
+  Running kruskal par threads=8 ... ok, wall=0.0678s
+  Running boruvka par threads=8 ... ok, wall=0.0138s
+
+[DATASET] ../dataset/UCI/biodeg.csv | n=1055, dim=41, k=2, header=0, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0520s
+  Running boruvka seq threads=1 ... ok, wall=0.0527s
+  Running kruskal par threads=1 ... ok, wall=0.0456s
+  Running boruvka par threads=1 ... ok, wall=0.0416s
+  Running kruskal par threads=2 ... ok, wall=0.0514s
+  Running boruvka par threads=2 ... ok, wall=0.0378s
+  Running kruskal par threads=4 ... ok, wall=0.0509s
+  Running boruvka par threads=4 ... ok, wall=0.0304s
+  Running kruskal par threads=8 ... ok, wall=0.0493s
+  Running boruvka par threads=8 ... ok, wall=0.0204s
+
+[DATASET] ../dataset/UCI/ecoli.csv | n=336, dim=7, k=8, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0075s
+  Running boruvka seq threads=1 ... ok, wall=0.0041s
+  Running kruskal par threads=1 ... ok, wall=0.0086s
+  Running boruvka par threads=1 ... ok, wall=0.0050s
+  Running kruskal par threads=2 ... ok, wall=0.0095s
+  Running boruvka par threads=2 ... ok, wall=0.0058s
+  Running kruskal par threads=4 ... ok, wall=0.0069s
+  Running boruvka par threads=4 ... ok, wall=0.0046s
+  Running kruskal par threads=8 ... ok, wall=0.0081s
+  Running boruvka par threads=8 ... ok, wall=0.0035s
+
+[DATASET] ../dataset/UCI/ionosphere.csv | n=351, dim=34, k=2, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0085s
+  Running boruvka seq threads=1 ... ok, wall=0.0076s
+  Running kruskal par threads=1 ... ok, wall=0.0128s
+  Running boruvka par threads=1 ... ok, wall=0.0073s
+  Running kruskal par threads=2 ... ok, wall=0.0100s
+  Running boruvka par threads=2 ... ok, wall=0.0055s
+  Running kruskal par threads=4 ... ok, wall=0.0116s
+  Running boruvka par threads=4 ... ok, wall=0.0058s
+  Running kruskal par threads=8 ... ok, wall=0.0085s
+  Running boruvka par threads=8 ... ok, wall=0.0045s
+
+[DATASET] ../dataset/UCI/led.arff.csv | n=500, dim=7, k=10, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0068s
+  Running boruvka seq threads=1 ... ok, wall=0.0058s
+  Running kruskal par threads=1 ... ok, wall=0.0077s
+  Running boruvka par threads=1 ... ok, wall=0.0055s
+  Running kruskal par threads=2 ... ok, wall=0.0074s
+  Running boruvka par threads=2 ... ok, wall=0.0065s
+  Running kruskal par threads=4 ... ok, wall=0.0083s
+  Running boruvka par threads=4 ... ok, wall=0.0054s
+  Running kruskal par threads=8 ... ok, wall=0.0061s
+  Running boruvka par threads=8 ... ok, wall=0.0036s
+
+[DATASET] ../dataset/UCI/sonar.csv | n=208, dim=60, k=2, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0055s
+  Running boruvka seq threads=1 ... ok, wall=0.0046s
+  Running kruskal par threads=1 ... ok, wall=0.0068s
+  Running boruvka par threads=1 ... ok, wall=0.0055s
+  Running kruskal par threads=2 ... ok, wall=0.0062s
+  Running boruvka par threads=2 ... ok, wall=0.0064s
+  Running kruskal par threads=4 ... ok, wall=0.0067s
+  Running boruvka par threads=4 ... ok, wall=0.0062s
+  Running kruskal par threads=8 ... ok, wall=0.0060s
+  Running boruvka par threads=8 ... ok, wall=0.0043s
+[SKIP] ../dataset/UCI/vehicle.csv: not readable numeric CSV/TXT
+
+[DATASET] ../dataset/UCI/wineqr.csv | n=1599, dim=11, k=6, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0994s
+  Running boruvka seq threads=1 ... ok, wall=0.0490s
+  Running kruskal par threads=1 ... ok, wall=0.0952s
+  Running boruvka par threads=1 ... ok, wall=0.0398s
+  Running kruskal par threads=2 ... ok, wall=0.0924s
+  Running boruvka par threads=2 ... ok, wall=0.0309s
+  Running kruskal par threads=4 ... ok, wall=0.0907s
+  Running boruvka par threads=4 ... ok, wall=0.0272s
+  Running kruskal par threads=8 ... ok, wall=0.0917s
+  Running boruvka par threads=8 ... ok, wall=0.0170s
+
+[DATASET] ../dataset/UCI/winequality-red.csv | n=1599, dim=11, k=6, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0993s
+  Running boruvka seq threads=1 ... ok, wall=0.0453s
+  Running kruskal par threads=1 ... ok, wall=0.0968s
+  Running boruvka par threads=1 ... ok, wall=0.0385s
+  Running kruskal par threads=2 ... ok, wall=0.0962s
+  Running boruvka par threads=2 ... ok, wall=0.0288s
+  Running kruskal par threads=4 ... ok, wall=0.0904s
+  Running boruvka par threads=4 ... ok, wall=0.0240s
+  Running kruskal par threads=8 ... ok, wall=0.0903s
+  Running boruvka par threads=8 ... ok, wall=0.0178s
+
+[DATASET] ../dataset/synthetic/2spiral.csv | n=1000, dim=2, k=2, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0377s
+  Running boruvka seq threads=1 ... ok, wall=0.0078s
+  Running kruskal par threads=1 ... ok, wall=0.0352s
+  Running boruvka par threads=1 ... ok, wall=0.0081s
+  Running kruskal par threads=2 ... ok, wall=0.0355s
+  Running boruvka par threads=2 ... ok, wall=0.0079s
+  Running kruskal par threads=4 ... ok, wall=0.0349s
+  Running boruvka par threads=4 ... ok, wall=0.0095s
+  Running kruskal par threads=8 ... ok, wall=0.0337s
+  Running boruvka par threads=8 ... ok, wall=0.0066s
+
+[DATASET] ../dataset/synthetic/3MC.csv | n=400, dim=2, k=3, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0084s
+  Running boruvka seq threads=1 ... ok, wall=0.0071s
+  Running kruskal par threads=1 ... ok, wall=0.0131s
+  Running boruvka par threads=1 ... ok, wall=0.0059s
+  Running kruskal par threads=2 ... ok, wall=0.0099s
+  Running boruvka par threads=2 ... ok, wall=0.0051s
+  Running kruskal par threads=4 ... ok, wall=0.0080s
+  Running boruvka par threads=4 ... ok, wall=0.0060s
+  Running kruskal par threads=8 ... ok, wall=0.0083s
+  Running boruvka par threads=8 ... ok, wall=0.0035s
+
+[DATASET] ../dataset/synthetic/banana.csv | n=4811, dim=2, k=2, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.8274s
+  Running boruvka seq threads=1 ... ok, wall=0.2786s
+  Running kruskal par threads=1 ... ok, wall=0.7716s
+  Running boruvka par threads=1 ... ok, wall=0.1981s
+  Running kruskal par threads=2 ... ok, wall=0.7701s
+  Running boruvka par threads=2 ... ok, wall=0.1668s
+  Running kruskal par threads=4 ... ok, wall=0.7673s
+  Running boruvka par threads=4 ... ok, wall=0.1111s
+  Running kruskal par threads=8 ... ok, wall=0.7280s
+  Running boruvka par threads=8 ... ok, wall=0.0623s
+
+[DATASET] ../dataset/synthetic/chainlink.csv | n=1000, dim=3, k=2, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0386s
+  Running boruvka seq threads=1 ... ok, wall=0.0182s
+  Running kruskal par threads=1 ... ok, wall=0.0391s
+  Running boruvka par threads=1 ... ok, wall=0.0175s
+  Running kruskal par threads=2 ... ok, wall=0.0374s
+  Running boruvka par threads=2 ... ok, wall=0.0141s
+  Running kruskal par threads=4 ... ok, wall=0.0361s
+  Running boruvka par threads=4 ... ok, wall=0.0121s
+  Running kruskal par threads=8 ... ok, wall=0.0361s
+  Running boruvka par threads=8 ... ok, wall=0.0097s
+
+[DATASET] ../dataset/synthetic/complex9.csv | n=3031, dim=2, k=9, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.3398s
+  Running boruvka seq threads=1 ... ok, wall=0.1228s
+  Running kruskal par threads=1 ... ok, wall=0.3268s
+  Running boruvka par threads=1 ... ok, wall=0.0896s
+  Running kruskal par threads=2 ... ok, wall=0.3245s
+  Running boruvka par threads=2 ... ok, wall=0.0767s
+  Running kruskal par threads=4 ... ok, wall=0.3225s
+  Running boruvka par threads=4 ... ok, wall=0.0468s
+  Running kruskal par threads=8 ... ok, wall=0.3149s
+  Running boruvka par threads=8 ... ok, wall=0.0295s
+
+[DATASET] ../dataset/synthetic/cure-t2-4k.csv | n=4200, dim=2, k=7, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.6610s
+  Running boruvka seq threads=1 ... ok, wall=0.2201s
+  Running kruskal par threads=1 ... ok, wall=0.6243s
+  Running boruvka par threads=1 ... ok, wall=0.1641s
+  Running kruskal par threads=2 ... ok, wall=0.6160s
+  Running boruvka par threads=2 ... ok, wall=0.1268s
+  Running kruskal par threads=4 ... ok, wall=0.6142s
+  Running boruvka par threads=4 ... ok, wall=0.0903s
+  Running kruskal par threads=8 ... ok, wall=0.6092s
+  Running boruvka par threads=8 ... ok, wall=0.0499s
+
+[DATASET] ../dataset/synthetic/curves1.csv | n=1000, dim=2, k=2, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0313s
+  Running boruvka seq threads=1 ... ok, wall=0.0171s
+  Running kruskal par threads=1 ... ok, wall=0.0320s
+  Running boruvka par threads=1 ... ok, wall=0.0123s
+  Running kruskal par threads=2 ... ok, wall=0.0302s
+  Running boruvka par threads=2 ... ok, wall=0.0112s
+  Running kruskal par threads=4 ... ok, wall=0.0303s
+  Running boruvka par threads=4 ... ok, wall=0.0109s
+  Running kruskal par threads=8 ... ok, wall=0.0292s
+  Running boruvka par threads=8 ... ok, wall=0.0088s
+
+[DATASET] ../dataset/synthetic/curves2.csv | n=1000, dim=2, k=2, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0329s
+  Running boruvka seq threads=1 ... ok, wall=0.0177s
+  Running kruskal par threads=1 ... ok, wall=0.0305s
+  Running boruvka par threads=1 ... ok, wall=0.0147s
+  Running kruskal par threads=2 ... ok, wall=0.0320s
+  Running boruvka par threads=2 ... ok, wall=0.0130s
+  Running kruskal par threads=4 ... ok, wall=0.0325s
+  Running boruvka par threads=4 ... ok, wall=0.0120s
+  Running kruskal par threads=8 ... ok, wall=0.0316s
+  Running boruvka par threads=8 ... ok, wall=0.0090s
+
+[DATASET] ../dataset/synthetic/dartboard1.csv | n=1000, dim=2, k=4, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0360s
+  Running boruvka seq threads=1 ... ok, wall=0.0252s
+  Running kruskal par threads=1 ... ok, wall=0.0353s
+  Running boruvka par threads=1 ... ok, wall=0.0175s
+  Running kruskal par threads=2 ... ok, wall=0.0345s
+  Running boruvka par threads=2 ... ok, wall=0.0129s
+  Running kruskal par threads=4 ... ok, wall=0.0298s
+  Running boruvka par threads=4 ... ok, wall=0.0128s
+  Running kruskal par threads=8 ... ok, wall=0.0304s
+  Running boruvka par threads=8 ... ok, wall=0.0129s
+
+[DATASET] ../dataset/synthetic/dartboard2.csv | n=1000, dim=2, k=4, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0323s
+  Running boruvka seq threads=1 ... ok, wall=0.0210s
+  Running kruskal par threads=1 ... ok, wall=0.0298s
+  Running boruvka par threads=1 ... ok, wall=0.0175s
+  Running kruskal par threads=2 ... ok, wall=0.0295s
+  Running boruvka par threads=2 ... ok, wall=0.0131s
+  Running kruskal par threads=4 ... ok, wall=0.0336s
+  Running boruvka par threads=4 ... ok, wall=0.0126s
+  Running kruskal par threads=8 ... ok, wall=0.0313s
+  Running boruvka par threads=8 ... ok, wall=0.0077s
+
+[DATASET] ../dataset/synthetic/diamond9.csv | n=3000, dim=2, k=9, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.3314s
+  Running boruvka seq threads=1 ... ok, wall=0.1178s
+  Running kruskal par threads=1 ... ok, wall=0.3104s
+  Running boruvka par threads=1 ... ok, wall=0.0939s
+  Running kruskal par threads=2 ... ok, wall=0.3096s
+  Running boruvka par threads=2 ... ok, wall=0.0763s
+  Running kruskal par threads=4 ... ok, wall=0.3132s
+  Running boruvka par threads=4 ... ok, wall=0.0486s
+  Running kruskal par threads=8 ... ok, wall=0.3096s
+  Running boruvka par threads=8 ... ok, wall=0.0301s
+
+[DATASET] ../dataset/synthetic/donut3.arff.csv | n=999, dim=2, k=3, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0372s
+  Running boruvka seq threads=1 ... ok, wall=0.0179s
+  Running kruskal par threads=1 ... ok, wall=0.0342s
+  Running boruvka par threads=1 ... ok, wall=0.0182s
+  Running kruskal par threads=2 ... ok, wall=0.0335s
+  Running boruvka par threads=2 ... ok, wall=0.0129s
+  Running kruskal par threads=4 ... ok, wall=0.0367s
+  Running boruvka par threads=4 ... ok, wall=0.0123s
+  Running kruskal par threads=8 ... ok, wall=0.0346s
+  Running boruvka par threads=8 ... ok, wall=0.0074s
+
+[DATASET] ../dataset/synthetic/donut3.csv | n=999, dim=2, k=3, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0368s
+  Running boruvka seq threads=1 ... ok, wall=0.0179s
+  Running kruskal par threads=1 ... ok, wall=0.0365s
+  Running boruvka par threads=1 ... ok, wall=0.0170s
+  Running kruskal par threads=2 ... ok, wall=0.0332s
+  Running boruvka par threads=2 ... ok, wall=0.0110s
+  Running kruskal par threads=4 ... ok, wall=0.0357s
+  Running boruvka par threads=4 ... ok, wall=0.0095s
+  Running kruskal par threads=8 ... ok, wall=0.0352s
+  Running boruvka par threads=8 ... ok, wall=0.0066s
+
+[DATASET] ../dataset/synthetic/donutcurves.csv | n=1000, dim=2, k=4, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0330s
+  Running boruvka seq threads=1 ... ok, wall=0.0163s
+  Running kruskal par threads=1 ... ok, wall=0.0297s
+  Running boruvka par threads=1 ... ok, wall=0.0144s
+  Running kruskal par threads=2 ... ok, wall=0.0320s
+  Running boruvka par threads=2 ... ok, wall=0.0116s
+  Running kruskal par threads=4 ... ok, wall=0.0310s
+  Running boruvka par threads=4 ... ok, wall=0.0103s
+  Running kruskal par threads=8 ... ok, wall=0.0286s
+  Running boruvka par threads=8 ... ok, wall=0.0083s
+
+[DATASET] ../dataset/synthetic/ds2c2sc13.csv | n=588, dim=2, k=13, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0128s
+  Running boruvka seq threads=1 ... ok, wall=0.0115s
+  Running kruskal par threads=1 ... ok, wall=0.0178s
+  Running boruvka par threads=1 ... ok, wall=0.0072s
+  Running kruskal par threads=2 ... ok, wall=0.0143s
+  Running boruvka par threads=2 ... ok, wall=0.0074s
+  Running kruskal par threads=4 ... ok, wall=0.0123s
+  Running boruvka par threads=4 ... ok, wall=0.0062s
+  Running kruskal par threads=8 ... ok, wall=0.0137s
+  Running boruvka par threads=8 ... ok, wall=0.0041s
+
+[DATASET] ../dataset/synthetic/pearl.csv | n=266, dim=2, k=3, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0044s
+  Running boruvka seq threads=1 ... ok, wall=0.0034s
+  Running kruskal par threads=1 ... ok, wall=0.0068s
+  Running boruvka par threads=1 ... ok, wall=0.0036s
+  Running kruskal par threads=2 ... ok, wall=0.0044s
+  Running boruvka par threads=2 ... ok, wall=0.0030s
+  Running kruskal par threads=4 ... ok, wall=0.0045s
+  Running boruvka par threads=4 ... ok, wall=0.0043s
+  Running kruskal par threads=8 ... ok, wall=0.0043s
+  Running boruvka par threads=8 ... ok, wall=0.0030s
+
+[DATASET] ../dataset/synthetic/rings.csv | n=1000, dim=2, k=3, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0384s
+  Running boruvka seq threads=1 ... ok, wall=0.0147s
+  Running kruskal par threads=1 ... ok, wall=0.0378s
+  Running boruvka par threads=1 ... ok, wall=0.0143s
+  Running kruskal par threads=2 ... ok, wall=0.0373s
+  Running boruvka par threads=2 ... ok, wall=0.0110s
+  Running kruskal par threads=4 ... ok, wall=0.0365s
+  Running boruvka par threads=4 ... ok, wall=0.0106s
+  Running kruskal par threads=8 ... ok, wall=0.0381s
+  Running boruvka par threads=8 ... ok, wall=0.0072s
+
+[DATASET] ../dataset/synthetic/smile2.csv | n=1000, dim=2, k=4, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0366s
+  Running boruvka seq threads=1 ... ok, wall=0.0128s
+  Running kruskal par threads=1 ... ok, wall=0.0324s
+  Running boruvka par threads=1 ... ok, wall=0.0130s
+  Running kruskal par threads=2 ... ok, wall=0.0341s
+  Running boruvka par threads=2 ... ok, wall=0.0110s
+  Running kruskal par threads=4 ... ok, wall=0.0356s
+  Running boruvka par threads=4 ... ok, wall=0.0101s
+  Running kruskal par threads=8 ... ok, wall=0.0336s
+  Running boruvka par threads=8 ... ok, wall=0.0091s
+
+[DATASET] ../dataset/synthetic/spherical_6_2.csv | n=300, dim=2, k=6, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0052s
+  Running boruvka seq threads=1 ... ok, wall=0.0040s
+  Running kruskal par threads=1 ... ok, wall=0.0070s
+  Running boruvka par threads=1 ... ok, wall=0.0043s
+  Running kruskal par threads=2 ... ok, wall=0.0076s
+  Running boruvka par threads=2 ... ok, wall=0.0040s
+  Running kruskal par threads=4 ... ok, wall=0.0050s
+  Running boruvka par threads=4 ... ok, wall=0.0030s
+  Running kruskal par threads=8 ... ok, wall=0.0059s
+  Running boruvka par threads=8 ... ok, wall=0.0030s
+
+[DATASET] ../dataset/synthetic/spiralsquare.csv | n=1500, dim=2, k=6, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0765s
+  Running boruvka seq threads=1 ... ok, wall=0.0244s
+  Running kruskal par threads=1 ... ok, wall=0.0684s
+  Running boruvka par threads=1 ... ok, wall=0.0167s
+  Running kruskal par threads=2 ... ok, wall=0.0663s
+  Running boruvka par threads=2 ... ok, wall=0.0156s
+  Running kruskal par threads=4 ... ok, wall=0.0678s
+  Running boruvka par threads=4 ... ok, wall=0.0127s
+  Running kruskal par threads=8 ... ok, wall=0.0652s
+  Running boruvka par threads=8 ... ok, wall=0.0116s
+
+[DATASET] ../dataset/synthetic/target.csv | n=770, dim=2, k=6, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0233s
+  Running boruvka seq threads=1 ... ok, wall=0.0097s
+  Running kruskal par threads=1 ... ok, wall=0.0236s
+  Running boruvka par threads=1 ... ok, wall=0.0090s
+  Running kruskal par threads=2 ... ok, wall=0.0255s
+  Running boruvka par threads=2 ... ok, wall=0.0083s
+  Running kruskal par threads=4 ... ok, wall=0.0252s
+  Running boruvka par threads=4 ... ok, wall=0.0077s
+  Running kruskal par threads=8 ... ok, wall=0.0234s
+  Running boruvka par threads=8 ... ok, wall=0.0060s
+
+[DATASET] ../dataset/synthetic/twenty.csv | n=1000, dim=2, k=20, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0380s
+  Running boruvka seq threads=1 ... ok, wall=0.0161s
+  Running kruskal par threads=1 ... ok, wall=0.0377s
+  Running boruvka par threads=1 ... ok, wall=0.0158s
+  Running kruskal par threads=2 ... ok, wall=0.0331s
+  Running boruvka par threads=2 ... ok, wall=0.0121s
+  Running kruskal par threads=4 ... ok, wall=0.0364s
+  Running boruvka par threads=4 ... ok, wall=0.0107s
+  Running kruskal par threads=8 ... ok, wall=0.0349s
+  Running boruvka par threads=8 ... ok, wall=0.0085s
+
+[DATASET] ../dataset/synthetic/twodiamonds.csv | n=800, dim=2, k=2, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0239s
+  Running boruvka seq threads=1 ... ok, wall=0.0145s
+  Running kruskal par threads=1 ... ok, wall=0.0269s
+  Running boruvka par threads=1 ... ok, wall=0.0107s
+  Running kruskal par threads=2 ... ok, wall=0.0274s
+  Running boruvka par threads=2 ... ok, wall=0.0105s
+  Running kruskal par threads=4 ... ok, wall=0.0259s
+  Running boruvka par threads=4 ... ok, wall=0.0074s
+  Running kruskal par threads=8 ... ok, wall=0.0244s
+  Running boruvka par threads=8 ... ok, wall=0.0071s
+
+[DATASET] ../dataset/synthetic/zelnik1.csv | n=299, dim=2, k=3, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0051s
+  Running boruvka seq threads=1 ... ok, wall=0.0037s
+  Running kruskal par threads=1 ... ok, wall=0.0054s
+  Running boruvka par threads=1 ... ok, wall=0.0044s
+  Running kruskal par threads=2 ... ok, wall=0.0054s
+  Running boruvka par threads=2 ... ok, wall=0.0040s
+  Running kruskal par threads=4 ... ok, wall=0.0075s
+  Running boruvka par threads=4 ... ok, wall=0.0029s
+  Running kruskal par threads=8 ... ok, wall=0.0047s
+  Running boruvka par threads=8 ... ok, wall=0.0035s
+
+[DATASET] ../dataset/synthetic/zelnik3 - Copy.csv | n=266, dim=2, k=3, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0044s
+  Running boruvka seq threads=1 ... ok, wall=0.0034s
+  Running kruskal par threads=1 ... ok, wall=0.0063s
+  Running boruvka par threads=1 ... ok, wall=0.0037s
+  Running kruskal par threads=2 ... ok, wall=0.0061s
+  Running boruvka par threads=2 ... ok, wall=0.0045s
+  Running kruskal par threads=4 ... ok, wall=0.0058s
+  Running boruvka par threads=4 ... ok, wall=0.0033s
+  Running kruskal par threads=8 ... ok, wall=0.0065s
+  Running boruvka par threads=8 ... ok, wall=0.0027s
+
+[DATASET] ../dataset/synthetic/zelnik3.csv | n=266, dim=2, k=3, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0044s
+  Running boruvka seq threads=1 ... ok, wall=0.0034s
+  Running kruskal par threads=1 ... ok, wall=0.0059s
+  Running boruvka par threads=1 ... ok, wall=0.0028s
+  Running kruskal par threads=2 ... ok, wall=0.0052s
+  Running boruvka par threads=2 ... ok, wall=0.0033s
+  Running kruskal par threads=4 ... ok, wall=0.0061s
+  Running boruvka par threads=4 ... ok, wall=0.0043s
+  Running kruskal par threads=8 ... ok, wall=0.0048s
+  Running boruvka par threads=8 ... ok, wall=0.0026s
+
+[DATASET] ../dataset/synthetic/zelnik6.csv | n=238, dim=2, k=3, header=1, label=1
+  Running kruskal seq threads=1 ... ok, wall=0.0039s
+  Running boruvka seq threads=1 ... ok, wall=0.0032s
+  Running kruskal par threads=1 ... ok, wall=0.0048s
+  Running boruvka par threads=1 ... ok, wall=0.0038s
+  Running kruskal par threads=2 ... ok, wall=0.0058s
+  Running boruvka par threads=2 ... ok, wall=0.0032s
+  Running kruskal par threads=4 ... ok, wall=0.0047s
+  Running boruvka par threads=4 ... ok, wall=0.0040s
+  Running kruskal par threads=8 ... ok, wall=0.0041s
+  Running boruvka par threads=8 ... ok, wall=0.0024s

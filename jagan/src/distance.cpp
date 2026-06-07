@@ -3,7 +3,7 @@
 #include <cmath>
 #include <stdexcept>
 
-double euclidean_distance(const Point& a, const Point& b) {
+double squared_euclidean_distance(const Point& a, const Point& b) {
     if (a.values.size() != b.values.size()) {
         throw std::runtime_error("Dimension mismatch between points.");
     }
@@ -15,5 +15,9 @@ double euclidean_distance(const Point& a, const Point& b) {
         sum += diff * diff;
     }
 
-    return std::sqrt(sum);
+    return sum;
+}
+
+double euclidean_distance(const Point& a, const Point& b) {
+    return std::sqrt(squared_euclidean_distance(a, b));
 }

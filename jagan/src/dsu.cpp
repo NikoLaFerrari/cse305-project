@@ -17,6 +17,14 @@ int DSU::find(int x) {
     return parent[x];
 }
 
+int DSU::find_const(int x) const {
+    while (parent[x] != x) {
+        x = parent[x];
+    }
+
+    return x;
+}
+
 bool DSU::unite(
     int a,
     int b,

@@ -13,6 +13,7 @@ public:
     explicit DSU(int n);
 
     int find(int x);
+    int find_const(int x) const;
 
     bool unite(
         int a,

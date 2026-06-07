@@ -7,18 +7,9 @@
 #include <stdexcept>
 
 static char detect_delimiter(const std::string& line) {
-    if (line.find(',') != std::string::npos) {
-        return ',';
-    }
-
-    if (line.find(';') != std::string::npos) {
-        return ';';
-    }
-
-    if (line.find('\t') != std::string::npos) {
-        return '\t';
-    }
-
+    if (line.find(',') != std::string::npos) return ',';
+    if (line.find(';') != std::string::npos) return ';';
+    if (line.find('\t') != std::string::npos) return '\t';
     return ' ';
 }
 
@@ -56,7 +47,7 @@ static bool try_parse_double(const std::string& s, double& value) {
                 return false;
             }
 
-            idx++;
+            ++idx;
         }
 
         return true;
@@ -118,9 +109,7 @@ std::vector<Point> read_dataset(
             double value = 0.0;
 
             if (!try_parse_double(cells[i], value)) {
-                throw std::runtime_error(
-                    "Non-numeric feature value found: " + cells[i]
-                );
+                throw std::runtime_error("Non-numeric feature value found: " + cells[i]);
             }
 
             point.values.push_back(value);

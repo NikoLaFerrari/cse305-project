@@ -1,20 +1,27 @@
-CXX = g++
-CXXFLAGS = -std=c++17 -O3 -Wall -Wextra -fopenmp -DUSE_PARALLEL_SORT -Iinclude
+CXX := g++
+CXXFLAGS := -std=c++17 -O3 -Wall -Wextra -Iinclude -pthread
+LDFLAGS := -pthread
 
-SRC = \
-	src/main.cpp \
-	src/io.cpp \
-	src/dsu.cpp \
+SRC := \
 	src/distance.cpp \
+	src/dsu.cpp \
 	src/edges.cpp \
-	src/clustering.cpp
+	src/io.cpp \
+	src/kruskal.cpp \
+	src/boruvka.cpp
 
-TARGET = hac_sequential
+APP := apps/hac.cpp
+
+TARGET := hac
+
+ifeq ($(PARSORT),1)
+	CXXFLAGS += -DUSE_PARALLEL_SORT
+endif
 
 all: $(TARGET)
 
-$(TARGET): $(SRC)
-	$(CXX) $(CXXFLAGS) $(SRC) -o $(TARGET)
+$(TARGET): $(SRC) $(APP)
+	$(CXX) $(CXXFLAGS) $^ -o $@ $(LDFLAGS)
 
 clean:
 	rm -f $(TARGET)
