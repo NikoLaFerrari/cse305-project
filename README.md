@@ -14,13 +14,15 @@ Two linkage criteria, four implementations — all benchmarked sequentially and 
 
 ```bash
 # Single-link (Kruskal + Borůvka)
+cd Jagan
 make
 
 # Centroid — priority queue
-g++ -O2 -std=c++17 -pthread benchmark_pq_final.cpp -o benchmark_pq
+cd Krzysztof
+g++ -O2 -std=c++17 -pthread benchmarkpq_final.cpp -o benchmarkpq
 
 # Centroid — reverse neighbours
-g++ -O2 -std=c++17 -pthread benchmark_rn.cpp -o benchmark_rn
+g++ -O2 -std=c++17 -pthread benchmark.cpp -o benchmark
 ```
 
 ## Run
