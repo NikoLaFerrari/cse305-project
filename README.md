@@ -8,10 +8,10 @@ Two linkage criteria, four implementations — all benchmarked sequentially and 
 
 | File | Linkage | Method |
 |------|---------|--------|
-| `src/kruskal.cpp` | Single-link | Kruskal |
-| `src/boruvka.cpp` | Single-link | Borůvka |
-| `benchmarkpq.cpp` | Centroid | Priority queue |
-| `benchmark.cpp` | Centroid | Reverse neighbour lists |
+| `jagan/src/kruskal.cpp` | Single-link | Kruskal |
+| `jagan/src/boruvka.cpp` | Single-link | Borůvka |
+| `krzysztof/benchmarkpq.cpp` | Centroid | Priority queue |
+| `krzysztof/benchmark.cpp` | Centroid | Reverse neighbour lists |
 
 ## Build
 
