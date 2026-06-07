@@ -2,13 +2,7 @@
 
 Two linkage criteria, four implementations — all benchmarked sequentially and in parallel.
 
-## Implementations
 
-| File | Linkage | Method |
-|------|---------|--------|
-| `src/kruskal.cpp` | Single-link# Parallel Hierarchical Clustering
-
-Two linkage criteria, four implementations — all benchmarked sequentially and in parallel.
 
 ## Implementations
 
